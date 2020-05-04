@@ -49,19 +49,10 @@ def sendEmail(to, content):
     server=smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('fakemail@gmail.com', 'your-password')
-    server.sendmail('fakemail@gmail.com', to, content)
+    server.login('your mail id', 'your-password')
+    server.sendmail('your mail id', to, content)
     server.close()
-
-
-
-
-
-
-
-
-
-
+    
 if __name__ == "__main__":
     speak("Hello  How may i help you")
     while True:        

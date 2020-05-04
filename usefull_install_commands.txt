@@ -1,0 +1,5 @@
+pip install ez_setup
+pip install --upgrade setuptools
+pip install gcloud
+pip install sox
+pip install  speech_recognition

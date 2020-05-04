@@ -14,8 +14,8 @@ with sr.Microphone() as source :
     print('say something')
     audio=r.listen(source)
     text=r.recognize_google(audio)
-    #File_object.write(text)
-    #File_object.close()
+    File_object.write(text)
+    File_object.close()
 
 try:
     print('You said :' + text)
